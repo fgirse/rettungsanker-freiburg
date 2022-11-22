@@ -1,0 +1,23 @@
+
+====================================================
+
+jQuery Timeline slider
+jQuery Plugin for building web timelines
+Author: pezflash
+http: //www.codecanyon.net/user/pezflash
+
+
+
+VERSIONS - UPDATE LOG
+
+====================================================
+
+
+
+
+v1.0 - 21/4/2012
+-----------------------------------------------------
+Release version
+
+
+

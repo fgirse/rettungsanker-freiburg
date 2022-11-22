@@ -2,7 +2,7 @@
 
 import { demos, type Item } from '#/lib/demos';
 import '#/styles/globals.css';
-import { NextLogo } from '#/ui/NextLogo';
+import { RAnkerNeuLogo } from '../ui/NextLogo';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
@@ -14,7 +14,7 @@ export function GlobalNav() {
   const close = () => setIsOpen(false);
 
   return (
-    <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 bg-black lg:bottom-0 lg:z-auto lg:w-72 lg:border-r lg:border-gray-800">
+    <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 bg-amber-700 lg:hidden {/*lg:bottom-0 lg:z-auto lg:w-60 lg:border-r lg:border-gray-800*/}">
       <div className="flex h-14 items-center py-4 px-4 lg:h-auto">
         <Link
           href="/"
@@ -22,10 +22,10 @@ export function GlobalNav() {
           onClick={close}
         >
           <div className="h-7 w-7 rounded-full border border-white/30 group-hover:border-white/50">
-            <NextLogo />
+            <RAnkerNeuLogo />
           </div>
 
-          <h2 className="font-medium tracking-wide text-gray-300 group-hover:text-gray-50">
+          <h2 className="font-medium tracking-wide text-gray-200 group-hover:text-gray-50">
             App Directory <span className="Work in progress">(WIP)</span>
           </h2>
         </Link>

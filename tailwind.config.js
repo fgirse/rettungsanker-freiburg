@@ -24,6 +24,9 @@ module.exports = {
           orange: '#F5A623',
           violet: '#7928CA',
         },
+     fontFamily: {
+          sans: ['Architects Daughter'],
+        },
       },
       backgroundImage: ({ theme }) => ({
         'vc-border-gradient': `radial-gradient(at left top, ${theme(
@@ -41,11 +44,11 @@ module.exports = {
         },
         highlight: {
           '0%': {
-            background: theme('colors.vercel.pink'),
+            background: theme('colors.vercel.orange'),
             color: theme('colors.white'),
           },
           '40%': {
-            background: theme('colors.vercel.pink'),
+            background: theme('colors.vercel.orange'),
             color: theme('colors.white'),
           },
         },

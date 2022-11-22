@@ -13,7 +13,7 @@ export function AddressBar() {
           xmlns="http://www.w3.org/2000/svg"
           className="h-4"
           viewBox="0 0 20 20"
-          fill="currentColor"
+          fill="#FFDD00"
         >
           <path
             fillRule="evenodd"
@@ -24,11 +24,11 @@ export function AddressBar() {
       </div>
       <div className="flex space-x-1 text-sm font-medium">
         <div>
-          <span className="px-2 text-gray-500">acme.com</span>
+          <span className="px-2 text-gray-100">rettungsanker-freiburg.com</span>
         </div>
         {pathname ? (
           <>
-            <span className="text-gray-600">/</span>
+            <span className="text-gray-200">/</span>
             {pathname
               .split('/')
               .slice(2)
@@ -44,7 +44,7 @@ export function AddressBar() {
                       </span>
                     </span>
 
-                    <span className="text-gray-600">/</span>
+                    <span className="text-gray-100">/</span>
                   </React.Fragment>
                 );
               })}

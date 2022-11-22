@@ -1,7 +1,9 @@
 import '#/styles/globals.css';
-import { AddressBar } from '#/ui/AddressBar';
+import  { AddressBar }  from '#/ui/AddressBar';
+import  { InfoBar }  from '#/ui/InfoBar';
 import { GlobalNav } from '#/ui/GlobalNav';
 import { VercelLogo } from '#/ui/VercelLogo';
+import Head from './head';
 
 export default function RootLayout({
   children,
@@ -10,24 +12,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <head />
-      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
+      <Head />
+      <body className="overflow-y-scroll bg-slate-600 bg-[url('/grid.svg')]">
         <GlobalNav />
 
-        <div className="lg:pl-72">
-          <div className="mx-auto max-w-4xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
+        <div className="lg:pl-0">
+          <div className="mx-auto max-w-9xl space-y-8 px-2 pt-20 lg:py-0 lg:px-0">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">
+              <div className="rounded-lg bg-slate-700">
                 <AddressBar />
+               
+
               </div>
+              <InfoBar />
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black p-3.5 lg:p-6">{children}</div>
+              <div className="rounded-lg bg-slate-800 p-3.5 lg:p-0">{children}</div>
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">
+              <div className="rounded-lg bg-green-200">
                 <Byline />
               </div>
             </div>

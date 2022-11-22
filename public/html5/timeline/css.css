@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Dosis Medium'), local('Dosis-Medium'),
+    url(http://themes.googleusercontent.com/static/fonts/dosis/v1/A4RWZsncmJ25G8iqn2EHN_esZW2xOQ-xsNqO47m55DA.woff)
+      format('woff');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dosis Bold'), local('Dosis-Bold'),
+    url(http://themes.googleusercontent.com/static/fonts/dosis/v1/x-7NZTw0n-ypOAaIE8uSrvesZW2xOQ-xsNqO47m55DA.woff)
+      format('woff');
+}

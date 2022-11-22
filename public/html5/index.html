@@ -1,0 +1,622 @@
+<html lang="en">
+  <!--<!
+  [endif]--><head>
+    <meta httpEquiv="content-type" content="text/html; charSet=UTF-8" />
+    <meta charset="utf-8" />
+    <title className="bg-yellow-500 text-white">History Timeline Rettungsanker</title>
+    <meta name="description" content="jQuery Plugin for building timelines" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./timeline/css.css" type="text/css" />
+    <link rel="stylesheet" href="./js/tipsy/tipsy.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./js/prettyPhoto/css/prettyPhoto.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all" />
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./js/jquery/jquery-1.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery-ui-1.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery_002.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery_004.js"></script>
+    <script src="./js/jquery/audio.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery_005.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery_003.js"></script>
+    <script type="text/javascript" src="./js/tipsy/jquery.tipsy.js"></script>
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <table width="920" cellspacing="0" cellpadding="0" border="0">
+      <tbody>
+        <tr>
+          <h1 className="headline">History Timeline</h1>
+
+          <td style="padding-left: 10px">
+            <div className="container">
+              <!-- PRELOAD -->
+              <div style="opacity: 0" className="preload">
+                <p align="center">Loading Timeline, Please Wait a Moment<br /></p>
+                <img src="/preloader.gif" alt="" />
+              </div>
+
+              <!-- TIMELINE CONTAINER -->
+              <div id="timeline_container">
+                <!-- TIMELINE -->
+
+                <div
+                  id="timeline"
+                  data-fadeindelay="3000"
+                  data-width="915"
+                  data-height="450"
+                  data-imageswidth="12950"
+                  data-imagesheight="265"
+                  data-contentwidth="6600"
+                  data-contentheight="174"
+                  data-draggerwidth="59"
+                  data-draggerheight="21"
+                  data-mousewheel="1"
+                >
+                  <!-- VIEWPORT - IMAGES -->
+                  <div style="height: 265px" className="viewport">
+                    <div
+                      style="width: 12950px; left: -42.1787px"
+                      className="images ui-draggable drag_icon"
+                    >
+                      <img id="bild_000" src="/Collage_000.png" width="400" height="210" alt="" />
+                      <img id="bild_001" src="/Collage_001.png" width="400" height="210" alt="" />
+
+                      <img id="bild_009" src="http://www.indiaww1.in/1918/8.png" alt="" />
+                      <img id="bild_010" src="http://www.indiaww1.in/1918/9.png" alt="" />
+                      <img id="bild_011" src="http://www.indiaww1.in/1918/10.png" alt="" />
+                      <img id="bild_012" src="http://www.indiaww1.in/1918/11.png" alt="" />
+                      <img id="bild_013" src="http://www.indiaww1.in/1918/12.png" alt="" />
+                      <img id="bild_014" src="http://www.indiaww1.in/1918/13.png" alt="" />
+                    </div>
+                  </div>
+
+                  <!-- SCROLLBAR (EDIT CSS FOR STYLING) -->
+                  <div style="top: 244px; width: 915px" className="scrollbar">
+                    <div style="height: 21px; width: 915px" className="track">
+                      <!--  MILESTONES MARKS -->
+                      <div className="marks">
+                        <div
+                          original-title=""
+                          style="display: block; left: 10px; opacity: 1"
+                          id="m4"
+                          className="mark"
+                          data-xpos="10"
+                          data-label="The 1920's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 155px; opacity: 1"
+                          id="m0"
+                          className="mark"
+                          data-xpos="155"
+                          data-label="The 1930's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 325px; opacity: 1"
+                          id="m1"
+                          className="mark"
+                          data-xpos="325"
+                          data-label="The 1940's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 420px; opacity: 1"
+                          id="m2"
+                          className="mark"
+                          data-xpos="420"
+                          data-label="The 1950's &amp; 60's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 505px; opacity: 1"
+                          id="m3"
+                          className="mark"
+                          data-xpos="505"
+                          data-label="The 1970's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 620px; opacity: 1"
+                          id="m7"
+                          className="mark"
+                          data-xpos="620"
+                          data-label="The 1980's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 760px; opacity: 1"
+                          id="m5"
+                          className="mark"
+                          data-xpos="760"
+                          data-label="The 1990's"
+                        ></div>
+                        <div
+                          original-title=""
+                          style="display: block; left: 900px; opacity: 1"
+                          id="m6"
+                          className="mark"
+                          data-xpos="900"
+                          data-label="The 2000's"
+                        ></div>
+                      </div>
+
+                      <div style="height: 321px; left: 3px; width: 59px" className="dragger"></div>
+                    </div>
+                  </div>
+
+                  <!-- MILESTONES -->
+                  <div style="height: 254px" className="milestones">
+                    <div style="width: 6600px; left: -19.9241px" className="content">
+                      <!-- MILESTONE SAMPLE 1 (FIRST) -->
+                      <div className="column_first">
+                        <div className="c400">
+                          <span className="date">Januar 2017 - DIE IDEE</span>
+                          <span className="txt"
+                            >Michael Schreck und Volker Schneider planen in Hommage an eine
+                            Kiezkneipe auf St. Pauli die Neueröffnung einer Lokalität in der
+                            Altstadt Freiburg. <br />
+                            <br />
+                          </span>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 3 -->
+                      <div className="column">
+                        <div className="c400">
+                          <span className="date">Februar - Juni 2017 - DIE UMSETZUNG<br /></span>
+                          <span className="txt"
+                            >In der Adelhauser-Strasse wird eine geeignete Immobilie gefunden. Die
+                            erforderlichen Umbauarbeiten zur Erstellung des Schiffrupmpfes werden
+                            geplant über vier Monate. <br /><br />
+                            Mittlerweile ist ein geeigneter Name und die Entscheidung für ein LOGO
+                            getroffen worden.</span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text5"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text5" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              Die neue Szenelokalität wird "Rettungsanker-Freiburg" heissen.
+                              Abgeleitet wurde der Name vom ursprünglichen Mutterhaus - dem
+                              <span style="color: goldenrod">"Goldenene Anker"</span> in der
+                              Talstrasse. Der "Goldene Anker" ist ein seit Jahren von Volker
+                              Schneider erfolgreich geführtes Speiselokal in dem sich vom
+                              alteingesessenen Freiburger "Bobbele" über die Studentenszene auch
+                              immer wieder in Freiburg stationierte Touristen aus aller Welt treffen
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">07. September 2017 - Eröffnung</span>
+                          <span className="txt"
+                            ><p>
+                              Gandhi makes an ‘Appeal for Enlistment’ to the people of Kheda. This
+                              appeal is later circulated in the form of leaflets showcasing Gandhi’s
+                              support for the war efforts....
+                            </p></span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text5"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text5" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              Gandhi makes an ‘Appeal for Enlistment’ to the people of Kheda. This
+                              appeal is later circulated in the form of leaflets showcasing Gandhi’s
+                              support for the war efforts. An excerpt from the leaflet states, ‘The
+                              easiest and straightest way to win Swaraj is to participate in the
+                              defence of the Empire’.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 2 -->
+                      <div className="column">
+                        <div className="c400"></div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 3 -->
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">8 March</span>
+                          <span className="txt"
+                            >Battle of Tell ‘Asur. Fighting takes place over an area which extended
+                            from the Mediterranean Sea to Abu Tellul and Mussalabeh on the edge of
+                            the Jordan Valley.
+                          </span>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 4 -->
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">21 March</span>
+                          <p>
+                            <span className="txt">
+                              Second Battle of the Somme, 1918. The Germans launch a strong
+                              offensive in France (Operation Michael) aimed at splitting the British
+                              and French lines. The British in particular suffer heavy casualties
+                              and begin a far reaching withdrawal. Fighting continues to 5 April.
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 5 -->
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">9 April</span>
+                          <span className="txt"
+                            ><p>
+                              Battle of the Lys. The Germans launch a second offensive (Operation
+                              Georgette) against the British line in Flanders, again capturing much
+                              ground. Fighting continues until 29 April.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 6 -->
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">10 April</span>
+                          <span className="txt"
+                            >Rifleman Karan Bahadur Rana, 3rd Gurkha Rifles, wins the Victoria Cross
+                            at El Kefr, Egypt. He, along with a few other men, crept forward with a
+                            Lewis gun under intense fire to engage an enemy machine-gun...</span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text2"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text2" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              Rifleman Karan Bahadur Rana, 3rd Gurkha Rifles, wins his Victoria
+                              Cross at El Kefr, Egypt. He, along with a few other men, crept forward
+                              with a Lewis gun under intense fire to engage an enemy machine-gun.
+                              No. 1 of the Lewis gun team opened fire but was shot almost
+                              immediately, whereupon the rifleman pushed the dead man off the gun,
+                              opened fire, knocked out the enemy gun crew and then silenced the fire
+                              of the enemy bombers and riflemen in front of him. During the
+                              remainder of the day he did magnificent work and finally assisted with
+                              covering fire in the withdrawal, until the enemy were closing in on
+                              him.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 7 -->
+                      <div className="column">
+                        <div className="c200">
+                          <span className="date">27 April</span>
+                          <span className="txt"
+                            >Gandhi attends the Viceroy’s War Conference in Delhi and agrees to
+                            recruit men for India’s war effort.
+                          </span>
+                        </div>
+                      </div>
+
+                      <!-- MILESTONE SAMPLE 8 -->
+                      <div className="column">
+                        <div className="c225">
+                          <span className="date">27 May</span>
+                          <span className="txt"
+                            ><p>
+                              Third Battle of the Aisne. Third German offensive (Operation Blucher)
+                              against the French line, centres on the Chemin des Dames above the
+                              River Aisne. Fighting continues to 6 June.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">22 June</span>
+                          <span className="txt"
+                            ><p>
+                              Gandhi makes an ‘Appeal for Enlistment’ to the people of Kheda. This
+                              appeal is later circulated in the form of leaflets showcasing Gandhi’s
+                              support for the war efforts....
+                            </p></span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text5"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text5" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              Gandhi makes an ‘Appeal for Enlistment’ to the people of Kheda. This
+                              appeal is later circulated in the form of leaflets showcasing Gandhi’s
+                              support for the war efforts. An excerpt from the leaflet states, ‘The
+                              easiest and straightest way to win Swaraj is to participate in the
+                              defence of the Empire’.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">8 July</span>
+                          <span className="txt"
+                            ><p>
+                              The Montagu-Chelmsford Report on the series of constitutional reforms
+                              to enable the ‘increasing association of Indians in...
+                            </p></span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text200"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text200" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              The Montagu-Chelmsford Report on the series of constitutional reforms
+                              to enable the ‘increasing association of Indians in every branch of
+                              the administration’ is published. This becomes the basis of the
+                              Government of India Act, 1919.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c350">
+                          <span className="date">2 September</span>
+                          <span className="txt"
+                            ><p>
+                              Ressaidar Badlu Singh, 14th Murray's Jat Lancers, wins the Victoria
+                              Cross on the west bank of the River Jordan, Palestine when his
+                              squadron was charging a strong enemy position. He realised that heavy
+                              casualties were being inflicted...
+                            </p></span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text3"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text3" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              Ressaidar Badlu Singh, 14th Murray's Jat Lancers, wins the Victoria
+                              Cross on the west bank of the River Jordan, Palestine when his
+                              squadron was charging a strong enemy position. He realised that heavy
+                              casualties were being inflicted from a small hill occupied by
+                              machine-guns and 200 infantry. Without any hesitation he collected six
+                              other ranks and with entire disregard of danger he charged and
+                              captured the position. He was mortally wounded on the very top of the
+                              hill when capturing one of the machine-guns single handed, but all the
+                              guns and infantry had surrendered to him before he died.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">19 September</span>
+                          <span className="txt"
+                            ><p>
+                              Battle of Megiddo. In northern Palestine, Allied troops launch a
+                              devastating attack on the Turks and begin a steady advance into Syria.
+                              Fighting continues until 25 October....
+                            </p></span
+                          >
+                          <span className="thumb"
+                            ><a
+                              rel="prettyPhoto"
+                              href="#extended_text6"
+                              data-rel="prettyPhoto"
+                              title=""
+                              ><img
+                                original-title="READ MORE"
+                                src="/read_more.png"
+                                alt=""
+                                className="readmore" /></a
+                          ></span>
+                          <div id="extended_text6" className="hidden">
+                            <!-- SAMPLE OF HIDDEN DIV WITH EXTENDED CONTENT -->
+                            <p>
+                              Battle of Megiddo. In northern Palestine, Allied troops launch a
+                              devastating attack on the Turks and begin a steady advance into Syria.
+                              Fighting continues until 25 October.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">23 September </span>
+                          <span className="txt"
+                            ><p>
+                              Battle of Haifa: the city of Haifa is liberated following a cavalry
+                              action by the 15 Imperial Service Cavalry Brigade comprising the
+                              Jodhpur Lancers, Mysore Lancers and Hyderabad Lancers. This day is
+                              commemorated by the Indian army every year as ‘Haifa day’.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">28 September</span>
+                          <span className="txt"
+                            ><p>
+                              Battle of the Flanders Ridges. In Belgium, Allies make a strong
+                              advance from Ypres that begins to push the Germans back. Fighting
+                              continues until 10 October.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">1 October</span>
+                          <span className="txt"
+                            ><p>
+                              Australian, Indian and British troops, supported by Arab forces,
+                              capture Damascus in Syria. Further gains follow, including the cities
+                              of Beirut, Homs and Aleppo.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">16 October</span>
+                          <span className="txt"
+                            ><p>
+                              Austro-Hungarian government announces the country is to become a
+                              federal nation based on its many nationalities. Hungary is to remain
+                              as a separate kingdom.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c250">
+                          <span className="date">30 October</span>
+                          <span className="txt"
+                            ><p>
+                              Turkey signs an armistice with the Allies. Turkish troops in
+                              Mesopotamia surrender.
+                            </p></span
+                          >
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c125">
+                          <span className="date">1 November</span>
+                          <span className="txt"><p>Battle of Merv.</p> </span>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c200">
+                          <span className="date">9 November</span>
+                          <span className="txt"
+                            ><p>
+                              The German Kaiser, Wilhelm II, abdicates and prepares to leave
+                              Germany. Germany declared a republic.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c300">
+                          <span className="date">11 November</span>
+                          <span className="txt"
+                            ><p>
+                              Germany signs an armistice with the Allies, agreeing to an immediate
+                              cease fire and the withdrawal of its troops to its own borders.
+                              Fighting ends in France and Belgium at 11.00 am.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="column">
+                        <div className="c200">
+                          <span className="date">25 November</span>
+                          <span className="txt"
+                            ><p>
+                              Colonel Paul von Lettow-Vorbeck ends his long campaign in German East
+                              Africa and surrenders undefeated.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="c175">
+                          <span className="date">1 December</span>
+                          <span className="txt"><p>Allied troops enter Germany.</p> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end content -->
+                  </div>
+                  <!-- end milestones -->
+                </div>
+                <!-- end timeline -->
+
+                <!-- SHADOW -->
+              </div>
+              <!-- end timeline container -->
+            </div>
+            <!-- end container -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

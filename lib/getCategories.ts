@@ -13,33 +13,53 @@ export type Category = {
 
 export const getCategories = cache((): Category[] => [
   {
-    name: 'Electronics',
-    slug: 'electronics',
+    name: 'Über uns',
+    slug: 'ueberUns',
     count: 11,
     items: [
-      { name: 'Phones', slug: 'phones', count: 4 },
-      { name: 'Tablets', slug: 'tablets', count: 5 },
-      { name: 'Laptops', slug: 'laptops', count: 2 },
+      { name: 'Geschichte', slug: 'phones', count: 4 },
+      { name: 'Team', slug: 'tablets', count: 5 },
+      //{ name: 'Laptops', slug: 'laptops', count: 2 },
     ],
   },
   {
-    name: 'Clothing',
-    slug: 'clothing',
+    name: 'Drinks & Snacks',
+    slug: 'drinksSnacks',
     count: 12,
     items: [
-      { name: 'Tops', slug: 'tops', count: 3 },
-      { name: 'Shorts', slug: 'shorts', count: 4 },
-      { name: 'Shoes', slug: 'shoes', count: 5 },
+      { name: 'Biere', slug: 'biere', count: 3 },
+      { name: 'Weine', slug: 'weine', count: 4 },
+      { name: 'Kurze', slug: 'kurze', count: 4 },
+      { name: 'Snacks', slug: 'snacks', count: 5 },
     ],
   },
   {
-    name: 'Books',
-    slug: 'books',
+    name: 'Sportarena',
+    slug: 'sportarena',
     count: 10,
     items: [
-      { name: 'Fiction', slug: 'fiction', count: 5 },
-      { name: 'Biography', slug: 'biography', count: 2 },
-      { name: 'Education', slug: 'education', count: 3 },
+      { name: 'Live', slug: 'live', count: 5 },
+      { name: 'SC Freiburg', slug: 'scfreiburg', count: 2 },
+      { name: 'Bundesliga', slug: 'bundesliga', count: 3 },
+    ],
+  },
+  {
+    name: 'Events',
+    slug: 'events',
+    count: 10,
+    items: [
+      { name: 'Live-Musik', slug: 'live', count: 5 },
+      { name: 'Dein Event', slug: 'deinEvent', count: 2 },
+      
+    ],
+  },
+  {
+    name: 'Wohin?',
+    slug: 'kontakt',
+    count: 10,
+    items: [
+      { name: 'Lageplan', slug: 'lageplan', count: 5 },
+      { name: 'OpenStreet', slug: 'openstreet', count: 2 },
     ],
   },
 ]);
